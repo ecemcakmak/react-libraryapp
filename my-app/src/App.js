@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/layout/sectionHeader';
+import { ButtonEcem } from './components/parts/button';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (    
+    <React.Fragment>
+    <Router>  
+    <div>  
+    <h1>ecem</h1>
+    <Navbar/>      
+        <ButtonEcem>
+          ecemişko
+        </ButtonEcem>      
+    </div>  
+    <Routes path="/" component={App} />  
+  </Router>  
+    
+      
+    </React.Fragment> 
   );
 }
 
