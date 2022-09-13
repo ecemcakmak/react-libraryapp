@@ -9,14 +9,14 @@ function App() {
   return (    
     <React.Fragment>
     <Router>  
-    <div>  
-    <h1>ecem</h1>
-    <Navbar/>      
-        <ButtonEcem>
-          ecemişko
-        </ButtonEcem>      
-    </div>  
-    <Routes path="/" component={App} />  
+        <div>  
+        <h1>ecem</h1>
+        <Navbar/>      
+            <ButtonEcem>
+              ecemişko
+            </ButtonEcem>      
+        </div>  
+        <Routes path="/" component={App} />  
   </Router>  
     
       
