@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../../img/logo.jpg';
+import logo from '../../assets/images/logo.jpg';
 import styled from 'styled-components';
-import { ButtonEcem } from '../parts/button';
+import { ButtonEcem } from '../../components/button';
 
 export default class Navbar extends Component {
     render() {
