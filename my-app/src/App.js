@@ -1,25 +1,49 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Routes, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './layout/header/index';
 import { ButtonEcem } from './components/button';
+import Login from './components/login';
 
 
-function App() {
-  return (    
-    <React.Fragment>
-        <Router>  
-            <div>  
-            <h1>ecem</h1>
-            <Navbar/>      
-                <ButtonEcem>
-                  ecemişko
-                </ButtonEcem>      
-            </div>  
-            <Routes path="/" component={App} />  
-      </Router>  
-    </React.Fragment> 
-  );
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      title: "ecem",
+    }
+    
+  }
+  
+  async componentDidMount(){
+    await fetch("http://localhost:3000/profile", {method:"GET"})
+    .then(response => response.json())
+    .then(json => this.setState({title:json.username})
+    );
+  }
+  render(){
+    return (    
+      <React.Fragment>
+          <Router>  
+              <div>  
+              <h1>{this.state.title}</h1>
+              <h2>{this.state.id}</h2>
+              <h2>{this.state.name}</h2>
+              <Navbar/>      
+                  <ButtonEcem>
+                    ecemişko
+                  </ButtonEcem>      
+              </div>  
+              <Login>
+
+              </Login>
+              <Routes path="/" component={App} />  
+        </Router>  
+      </React.Fragment> 
+    );
+  }
 }
+
+
 
 export default App;
