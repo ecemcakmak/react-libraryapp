@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import '../../src/App';
+import banner from '../../src/assets/images/library-banner.jpg';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import {Box} from './box';
 
 class Login extends Component{
     constructor(){
@@ -34,12 +39,21 @@ class Login extends Component{
 
     render(){
         return(
-            <React.Fragment>
-                <form onSubmit={this.handleSubmit}>
-                    <input name="username" id="username" type="text"/>
-                    <input name="password" id="password" type="password"/>
-                    <input type="submit" placeholder="Gönder"/>
-                </form>
+            <React.Fragment>            
+            <Row className="loginRow">
+                    <Col lg={5} className="login">                    
+                        <form onSubmit={this.handleSubmit}>
+                            <input name="username" id="username" type="text"/>
+                            <input name="password" id="password" type="password"/>
+                            <input type="submit" placeholder="Gönder"/>
+                        </form>
+                    </Col>
+                    <Col lg={7} className="banner__col">
+                            <img src={banner} alt='library' className='banner'/>
+                    </Col>
+            </Row>  
+            
+                                           
             </React.Fragment>
         )
     }

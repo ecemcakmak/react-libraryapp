@@ -26,13 +26,8 @@ class App extends Component {
       <React.Fragment>
           <Router>  
               <div>  
-              <h1>{this.state.title}</h1>
-              <h2>{this.state.id}</h2>
-              <h2>{this.state.name}</h2>
-              <Navbar/>      
-                  <ButtonEcem>
-                    ecemişko
-                  </ButtonEcem>      
+              {/* <h1>{this.state.title}</h1> */}
+           
               </div>  
               <Login>
 

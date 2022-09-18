@@ -861,4 +861,25 @@ template {
     margin-left: auto !important;
   }
 }
+
+.login {
+  background-color: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner__col {
+  padding-right: 0px;
+}
+
+.loginRow {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 /*# sourceMappingURL=main.css.map */
