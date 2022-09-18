@@ -1,0 +1,5 @@
+.form{
+    @include flex;
+    flex-direction: column;
+    min-width: 450px;    
+}

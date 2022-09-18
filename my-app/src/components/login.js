@@ -42,10 +42,10 @@ class Login extends Component{
             <React.Fragment>            
             <Row className="loginRow">
                     <Col lg={5} className="login">                    
-                        <form onSubmit={this.handleSubmit}>
-                            <input name="username" id="username" type="text"/>
-                            <input name="password" id="password" type="password"/>
-                            <input type="submit" placeholder="Gönder"/>
+                        <form onSubmit={this.handleSubmit} className="form">
+                            <input name="username" id="username" type="text" className="input"/>
+                            <input name="password" id="password" type="password" className="input"/>
+                            <input type="submit" placeholder="Gönder" className="input button"/>
                         </form>
                     </Col>
                     <Col lg={7} className="banner__col">
