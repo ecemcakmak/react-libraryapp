@@ -1,54 +1,29 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../src/App';
+import Profile from '../pages/profile';
 import banner from '../../src/assets/images/library-banner.jpg';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {Box} from './box';
 
 
 function Login(){
-    // constructor(){
-    //     super();
-    //     this.state = {
-    //         username: "",
-    //         password: ""
-    //     }
-
-    //     this.handleSubmit = this.handleSubmit.bind(this);
-    // }
-
-    // componentDidMount(){
-    //     fetch("http://localhost:3000/profile")
-    //     .then(res => res.json())
-    //     .then(json => {
-    //         this.setState({
-    //             username: json.username,
-    //             password: json.password
-    //         }, () => console.log(this.state));
-    //     })
-    // }
-
-    // handleSubmit(event){
-    //     event.preventDefault();
-    //     if(this.state.username == event.target[0].value && this.state.password == event.target[1].value){
-    //         alert("Aferin lan düdük")
-    //     }
-    //     else{
-    //         alert("bi boku beceremedin")
-    //     }
-    // }
+    const navigate = useNavigate();
+    const onClickHandler = useCallback(() => navigate('/profile', {replace: true}), [navigate]);
+ 
         return(
-            <React.Fragment>            
+            <React.Fragment>      
             <Row className="loginRow">
                     <Col lg={5} className="login">                    
-                        <form className="form">
+                        <form className="form" onSubmit={handleSubmit}>
                             <input name="username" id="username" type="text" className="input"/>
                             <input name="password" id="password" type="password" className="input"/>
-                            <input type="submit" placeholder="Gönder" className="input button"/>
+                            <button onClick={onClickHandler} type="button" className="input__button">ecem</button>
                         </form>
                     </Col>
                     <Col lg={7} className="banner__col">
                             <img src={banner} alt='library' className='banner'/>
+
                     </Col>
             </Row>  
                  
@@ -56,6 +31,9 @@ function Login(){
         );
 };
 
-
+function handleSubmit(event){
+    
+    
+}
 
 export default Login;
