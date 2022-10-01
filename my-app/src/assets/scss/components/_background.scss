@@ -5,4 +5,10 @@
     background-color: rgb(2, 61, 2);
     width: 100%;
     min-height: 100vh;
+    &.content{
+        padding-top: 250px;
+        @include flex;
+        align-items:flex-start;
+        @include justify-content(start);
+    }
 }
