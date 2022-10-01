@@ -30,8 +30,11 @@ export default function KitapListe() {
                   <tbody> 
                     <tr>
                       <td className="w-25">
+                        <a>
                         <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/sheep-5.jpg" className="img-fluid img-thumbnail" alt="Sheep"/>
-                      </td>
+
+                        </a>
+                       </td>
                       <td>İnkılap</td>
                       <td>Tanrılar Okulu</td>
                       <td>Stefano D'Anna</td>

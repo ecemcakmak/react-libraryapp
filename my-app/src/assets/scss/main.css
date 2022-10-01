@@ -911,6 +911,9 @@ template {
   background-color: white;
   border-radius: 18px;
 }
+.table__list td {
+  cursor: pointer;
+}
 .table__list thead th {
   border-top: 0px;
   text-align: center;
