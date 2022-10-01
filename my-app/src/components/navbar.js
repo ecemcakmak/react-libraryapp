@@ -11,6 +11,7 @@ export default function Navbar(){
             <CustomLink to="/">Login</CustomLink>
             <CustomLink to="/profile">Profile</CustomLink>
             <CustomLink to="/kitapliste">Kitap Liste</CustomLink>
+            <CustomLink to="/kitapdetay">Kitap Detay</CustomLink>
         </ul>
     </nav>
 }

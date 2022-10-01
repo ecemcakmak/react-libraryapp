@@ -938,6 +938,18 @@ template {
   vertical-align: middle;
 }
 
+.card .card-title {
+  font-family: "Izmir-ExtraBold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: rgb(2, 61, 2);
+}
+.card img {
+  width: 100%;
+  max-height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container.mid {
   display: -moz-flex;
   display: flex;

@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../layout/header/index';
+import KitapDetay from '../pages/kitapdetay'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
@@ -7,6 +9,8 @@ import Container from 'react-bootstrap/Container';
 import Box from '../components/box'
 import Navbar from '../components/navbar'
 export default function KitapListe() {
+  const navigate = useNavigate();
+  const onClickHandler = useCallback(() => navigate('/kitapdetay', {replace: true}), [navigate]);
   return (
   
     <div className='pageBackground content'>
@@ -30,9 +34,8 @@ export default function KitapListe() {
                   <tbody> 
                     <tr>
                       <td className="w-25">
-                        <a>
-                        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/sheep-5.jpg" className="img-fluid img-thumbnail" alt="Sheep"/>
-
+                        <a onClick={onClickHandler} type="button">
+                          <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/sheep-5.jpg" className="img-fluid img-thumbnail" alt="Sheep"/>
                         </a>
                        </td>
                       <td>İnkılap</td>
