@@ -15,7 +15,7 @@ export default function KitapListe() {
 
               <Row>
                 <Col className="col-12">
-                <Table className="table table-image">
+                <Table className="table table-image table__list">
                   <thead>
                     <tr>
                       <th scope="col">Day</th>

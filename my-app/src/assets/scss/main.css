@@ -907,6 +907,11 @@ template {
   transition: opacity 0.5s ease-in-out;
 }
 
+.table__list {
+  background-color: white;
+  border-radius: 20px;
+}
+
 .container.mid {
   display: -moz-flex;
   display: flex;
