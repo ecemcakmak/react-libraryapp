@@ -14,14 +14,14 @@ function Login(){
         return(
             <React.Fragment>      
             <Row className="loginRow">
-                    <Col lg={5} className="login">                    
+                    <Col  className="login col-xxl-5">                    
                         <form className="form" onSubmit={handleSubmit}>
                             <input name="username" id="username" type="text" className="input"/>
                             <input name="password" id="password" type="password" className="input"/>
                             <button onClick={onClickHandler} type="button" className="input__button">ecem</button>
                         </form>
                     </Col>
-                    <Col lg={7} className="banner__col">
+                    <Col className="banner__col col-xxl-7">
                             <img src={banner} alt='library' className='banner'/>
 
                     </Col>

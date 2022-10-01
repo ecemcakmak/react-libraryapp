@@ -4,6 +4,10 @@
     object-fit: cover;
     &__col{
         padding-right: 0px;
+        display: none;
         padding-left: 0px;
+        @include mq(min, $xxl){
+            display: block;
+        }
     }
 }
