@@ -1,4 +1,10 @@
 .table__list{
     background-color: white;
     @include border-radius(20px);
+    thead{
+        th{
+            padding: 25px;
+            @include font-IzmirExtraBold(16px);
+        }
+    }
 }
