@@ -12,5 +12,13 @@
             color: rgb(2, 61, 2);
             @include font-IzmirSemiBold(16px);
         }
+        &:focus{
+            padding: 7px 25px;
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: white!important;
+            color: rgb(2, 61, 2) !important;
+            border:2px solid rgb(2, 61, 2) !important;
+        }
     }
 }

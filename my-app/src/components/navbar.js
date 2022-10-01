@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Input from 'react-bootstrap/InputGroup'
+ 
 import Container from 'react-bootstrap/Container';
 
 
@@ -25,7 +25,7 @@ export default function Navbar(){
   <Col className="col-6">
   <div className="input-group">
             <div className="form-outline">
-                <Input type="search" id="form1" className="form-control" />
+                <input type="search" id="form1" className="form-control" />
             </div>
             <button type="button" className="button button__fav btn btn-primary">
               ara
