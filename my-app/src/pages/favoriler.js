@@ -17,7 +17,7 @@ export default function Favoriler() {
       <Header/>
           <Container>
               <Row>
-                <Col className="col-4">
+                <Col className="col-xxl-4 col-xl-6">
                 <Card className="card favs" >
                 <img src={kapak} alt='library' className='banner'/>
                   <div className="card-body">
