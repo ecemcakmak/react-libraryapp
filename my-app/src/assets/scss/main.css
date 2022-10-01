@@ -897,6 +897,7 @@ template {
 .nav {
   position: fixed;
   top: 0;
+  align-items: center;
   display: -moz-flex;
   display: flex;
   justify-content: space-between;
@@ -966,6 +967,9 @@ template {
   max-height: 550px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.card.favs img {
+  max-height: 250px;
 }
 
 .button__fav {

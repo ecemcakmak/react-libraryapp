@@ -20,6 +20,7 @@ export default function Navbar(){
     <CustomLink to="/profile">Profile</CustomLink>
     <CustomLink to="/kitapliste">Kitap Liste</CustomLink>
     <CustomLink to="/kitapdetay">Kitap Detay</CustomLink>
+    <CustomLink to="/favoriler">Favoriler</CustomLink>
 </ul>
   </Col>
   <Col className="col-6">

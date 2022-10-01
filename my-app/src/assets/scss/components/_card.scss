@@ -8,4 +8,9 @@
         max-height: 550px;
         object-fit: cover;
     }
+    &.favs{
+        img{
+            max-height: 250px;
+        }
+    }
 }
