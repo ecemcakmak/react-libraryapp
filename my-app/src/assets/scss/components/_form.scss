@@ -1,6 +1,13 @@
 .form{
     @include flex;
     flex-direction: column;
-    min-width: 450px;    
+    min-width: 450px;   
+    &-control{
+        width: 100%;
+    } 
+    &-outline{
+        max-width: 500px;
+        width: 100%;
+    }
 
 }

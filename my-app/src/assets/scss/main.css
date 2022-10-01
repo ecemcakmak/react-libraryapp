@@ -825,6 +825,13 @@ template {
   flex-direction: column;
   min-width: 450px;
 }
+.form-control {
+  width: 100%;
+}
+.form-outline {
+  max-width: 500px;
+  width: 100%;
+}
 
 .input {
   background-color: white;
@@ -841,6 +848,10 @@ template {
   background-color: rgb(28, 48, 9);
   border: 1px solid rgb(255, 255, 255);
   color: white;
+}
+.input-group {
+  justify-content: end;
+  width: 100%;
 }
 
 .pageBackground {
@@ -882,6 +893,7 @@ template {
   top: 0;
   display: -moz-flex;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 20px;
   background-color: rgb(255, 255, 255);
