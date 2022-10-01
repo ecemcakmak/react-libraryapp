@@ -1,0 +1,21 @@
+.box{
+    &__profile{
+        display: block;
+        margin: 0 auto;
+        @include border-radius(10px);
+        padding: 30px 15px;
+        background-color: rgb(255, 255, 255);
+        max-width: 500px;
+        width: 100%;
+        min-height: 200px;
+        &__picture{
+            @include flex;
+            @include justify-content(center);
+            text-align: center;
+            width: 100%;
+            img{
+            
+            }
+        }
+    }
+}

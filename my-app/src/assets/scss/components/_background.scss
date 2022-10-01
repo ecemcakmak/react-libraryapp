@@ -1,0 +1,8 @@
+.pageBackground{
+    @include flex;
+    align-items: center;
+    @include justify-content(center);
+    background-color: rgb(2, 61, 2);
+    width: 100%;
+    min-height: 100vh;
+}

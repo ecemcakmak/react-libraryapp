@@ -1,0 +1,9 @@
+.container{
+    &.mid{
+        @include flex;
+        align-items: center;
+        @include justify-content(center);
+    }
+
+}
+    

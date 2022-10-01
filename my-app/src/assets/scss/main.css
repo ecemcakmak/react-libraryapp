@@ -919,6 +919,97 @@ template {
   color: white;
 }
 
+.pageBackground {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #023d02;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.box__profile {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 30px 15px;
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.box__profile__picture {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.nav ul li {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #545454;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.nav ul li a:hover {
+  opacity: 0.7;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.container.mid {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .loginRow {
   width: 100%;
   margin-left: 0px;

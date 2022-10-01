@@ -1,40 +1,12 @@
 import React, { Component } from 'react';
+import Navbar from '../../components/navbar';
 import {Link} from 'react-router-dom';
-import logo from '../../assets/images/logo.jpg';
-import styled from 'styled-components';
-import { ButtonEcem } from '../../components/button';
-
-export default class Navbar extends Component {
-    render() {
-        return(
-            <NavbarWrapper className="navbar-wrapper">            
-                <Link to='/'>
-                    <img src={logo} alt='library' className='navbar-logo'/>
-                </Link>
-                <ul className='navbar-menu'>
-                    <li className='navbar-item'>
-                        <Link to='/' className='nav-link'>
-                            ecoş
-                        </Link>
-                    </li>
-                    <li className='navbar-item'>
-                      <ButtonEcem>
-                        ecem
-                      </ButtonEcem>
-                    </li>
-                </ul>
-            </NavbarWrapper>
-        )
  
-    }
 
+ 
+export default function Header(){
+    return(
+        <Navbar/>
+      )
+   
 }
-
-const NavbarWrapper = styled.nav`
-        background-color: red;
-            .nav-link{
-                color: purple !important;
-                font-size: 25px;                
-            }
-`
-;

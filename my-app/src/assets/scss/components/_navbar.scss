@@ -1,0 +1,33 @@
+.nav{
+    position: fixed;
+    top: 0;
+    @include flex;
+
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    ul{
+        @include flex;
+        margin-bottom: 0px;
+        li{
+            list-style: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            a{
+                text-decoration: none;
+                color: rgb(84, 84, 84);
+                font-weight: 600;
+                opacity: 1;
+                &:hover{
+                    opacity: 0.7;
+                    -webkit-transition: opacity .5s ease-in-out;
+                    -moz-transition: opacity .5s ease-in-out;
+                    -ms-transition: opacity .5s ease-in-out;
+                    -o-transition: opacity .5s ease-in-out;
+                    transition: opacity .5s ease-in-out;
+                }
+            }
+            
+        }
+    }
+}
