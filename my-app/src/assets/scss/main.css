@@ -909,12 +909,30 @@ template {
 
 .table__list {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 18px;
 }
 .table__list thead th {
+  border-top: 0px;
+  text-align: center;
   padding: 25px;
   font-family: "Izmir-ExtraBold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: rgb(2, 61, 2);
+}
+.table__list tbody {
+  align-items: center;
+}
+.table__list tbody td {
+  text-align: center;
+  align-items: center;
+  padding: 25px;
+  font-family: "Izmir-Semibold", Arial, Helvetica, sans-serif;
   font-size: 16px;
+  color: rgb(2, 61, 2);
+}
+
+.table-image td, .table-image th {
+  vertical-align: middle;
 }
 
 .container.mid {
