@@ -8,14 +8,14 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 
 export default function Favoriler() {
-  
-   
+  const navigate = useNavigate();
+  const onClickHandler = useCallback(() => navigate('/kitapdetay', {replace: true}), [navigate]);
+
   return (
   
     <div className='pageBackground content'>
       <Header/>
           <Container>
-
               <Row>
                 <Col className="col-4">
                 <Card className="card favs" >
@@ -23,7 +23,7 @@ export default function Favoriler() {
                   <div className="card-body">
                     <h5 className="card-title">Kitap Hakkında</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button href="#" className="btn btn-primary button button__fav">fava ekle</button>
+                    <button onClick={onClickHandler} className="btn btn-primary button button__fav">Detay</button>
                   </div>
                 </Card> 
                 </Col>

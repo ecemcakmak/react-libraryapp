@@ -8,7 +8,9 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 
 export default function KitapDetay() {
-  
+  const navigate = useNavigate();
+  const onClickHandler = useCallback(() => navigate('/favoriler', {replace: true}), [navigate]);
+
    
   return (
   
@@ -23,7 +25,7 @@ export default function KitapDetay() {
                   <div className="card-body">
                     <h5 className="card-title">Kitap Hakkında</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button href="#" className="btn btn-primary button button__fav">fava ekle</button>
+                    <button onClick={onClickHandler} className="btn btn-primary button button__fav">fava ekle</button>
                   </div>
                 </Card> 
                 </Col>
