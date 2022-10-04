@@ -28,7 +28,6 @@ export default function Favoriler() {
                 </Card> 
                 </Col>
               </Row>
-
           </Container>
     </div>
   
