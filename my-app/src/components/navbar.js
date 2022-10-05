@@ -12,7 +12,7 @@ export default function Navbar(){
 
 <Row>
   <Col className="col-6">
-  <Link to="/" classNameName="site-title">
+  <Link to="/" className="site-title">
 
 </Link>
 <ul>
