@@ -1,6 +1,15 @@
 {
-    "profile": {
-        "username": "emre",
-        "password": "emregok"
-    }
+    "profiles": [{
+            "username": "ecem",
+            "password": "çetin"
+        },
+        {
+            "username": "emre",
+            "password": "emregök"
+        },
+        {
+            "username": "merve",
+            "password": "özkan"
+        }
+    ]
 }

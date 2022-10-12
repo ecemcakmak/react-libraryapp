@@ -22,7 +22,7 @@ function Login(){
         });
 
         const handleLogin = useCallback((form) => {
-            fetch("http://127.0.0.1:4000/profile")
+            fetch("http://127.0.0.1:4000/profiles")
             .then((res) => res.json())
             .then(res => {
                 if(res.username == form.username && res.password == form.password){

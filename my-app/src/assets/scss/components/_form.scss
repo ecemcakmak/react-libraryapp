@@ -1,7 +1,10 @@
 .form{
     @include flex;
     flex-direction: column;
-    min-width: 450px;   
+    min-width: 450px;  
+    p{
+        color: white;
+    } 
     &-control{
         height: 42px;
         width: 100%;

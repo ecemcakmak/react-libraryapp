@@ -910,6 +910,10 @@ template {
   min-width: 450px;
 }
 
+.form p {
+  color: white;
+}
+
 .form-control {
   height: 42px;
   width: 100%;
